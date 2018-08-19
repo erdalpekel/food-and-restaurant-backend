@@ -1,0 +1,30 @@
+[
+  {
+    'repeat(100, 100)': {
+      _id: '{{objectId()}}',
+      name: '{{company().toUpperCase()}}',
+      isOrganic: '{{bool()}}',
+      price: '{{floating(1, 4, 2, "€0,0.00")}}',
+      image: 'http://placehold.it/100x100',
+      category: '{{random("Pasta", "Salad", "Bread", "Soup", "Antipasti", "Roast")}}',
+      restaurant: {
+      	name: '{{company().toUpperCase()}}',
+        image: 'http://placehold.it/100x100',
+        website: 'www.{{company()}}.com',
+        description: '{{lorem(1, "paragraphs")}}',
+        email(tags) {
+        return `info@${this.name}${tags.domainZone()}`.toLowerCase();
+      },
+      	phone: '+1 {{phone()}}',
+      	address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
+        category: '{{random("Ethnic", "Fast Food", "Casual")}}',
+      },
+      description: '{{lorem(1, "paragraphs")}}',
+      location: {
+        coordinates: ['{{floating(11.3, 11.7)}}', '{{floating(48.0, 48.3)}}'],
+        type: 'Point'
+      },
+      rating: '{{integer(0,5)}}'
+    }
+  }
+]
