@@ -5,7 +5,7 @@ This repository is a compatible NodeJS backend for my [food-and-restaurant](http
 Remarks and further documentation can be found at the webapps GitHub [homepage](https://github.com/erdalpekel/food-and-restaurant).
 
 ### Configuration
-Database configuration parameters need to be placed in the .env file under `src/.env`:
+Database configuration parameters need to be placed in the .env file under `PROJECT_ROOT/.env`:
 ```
 DB_HOST=DATABASE_HOST:PORT
 DB_NAME=DATABASE_NAME
