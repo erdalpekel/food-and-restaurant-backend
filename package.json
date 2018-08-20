@@ -1,10 +1,17 @@
 {
-  "name": "restaurants-finder-backend",
+  "name": "food-and-restaurant-backend",
   "version": "0.0.0",
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www"
   },
+  "license": "MIT",
+  "author": {
+    "name": "Erdal Pekel",
+    "email": "erdal.pekel.dev@gmail.com",
+    "url": "https://github.com/erdalpekel"
+  },
+  "homepage": "https://github.com/erdalpekel/food-and-restaurant-backend#readme",
   "dependencies": {
     "cookie-parser": "^1.4.3",
     "debug": "~2.6.9",
