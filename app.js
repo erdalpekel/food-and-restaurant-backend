@@ -5,10 +5,14 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const mongoose = require("mongoose");
 const config = require("./config.js");
+var cors = require('cors');
 
 var restaurantRouter = require("./routes/restaurantProduct");
 
 var app = express();
+
+// for development purposes
+app.use(cors({origin: 'http://localhost:3001'}));
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

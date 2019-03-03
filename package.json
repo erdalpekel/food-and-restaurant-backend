@@ -14,16 +14,17 @@
   "homepage": "https://github.com/erdalpekel/food-and-restaurant-backend#readme",
   "dependencies": {
     "cookie-parser": "^1.4.3",
-    "debug": "~2.6.9",
+    "cors": "^2.8.5",
+    "debug": "~4.1.1",
     "dotenv": "^6.0.0",
     "express": "~4.16.0",
-    "http-errors": "~1.6.2",
+    "http-errors": "~1.7.2",
     "mongoose": "^5.2.9",
     "morgan": "~1.9.0",
-    "pug": "2.0.0-beta11"
+    "pug": "^2.0.3"
   },
   "devDependencies": {
-    "nodemon": "^1.18.3",
-    "prettier": "^1.14.2"
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4"
   }
 }
